@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/bulma.css">
+<script src="https://code.jquery.com/jquery-3.0.0.slim.min.js"></script>
+<script type="text/javascript">
+  function loading(text, str, notify){
+  	$(text).text("loading")
+  	setTimeout(function(){
+  	  $(text).text("loading..");  
+      setTimeout(function(){
+        $(text).text("loading....");
+        setTimeout(function(){
+          $(text).text("loading......");
+          setTimeout(function(){
+            $(text).text("loading........");
+            setTimeout(function(){
+              $(text).text("loading..........");
+              setTimeout(function(){
+                $(text).text("loading............");
+                setTimeout(function(){
+                  $(text).text("loading..............");
+                	setTimeout(function(){
+                      $(text).text(str);
+                  },1000);
+                },1000);
+              },1000);
+            },1000);
+          },1000);
+        },1000);
+      },1000);
+  	},1000);
+  }
+
+  $('#grid').ready(function(){
+    $('#button1').click(function(){
+      loading('#text1', "Hue", '#notify1');
+    });
+    $('#button2').click(function(){
+      loading('#text2');
+    });
+    $('#button3').click(function(){
+      loading('#text3');
+    });
+  });
+</script>
+<title>Connectly Lab.  体験メニュー</title>
+</head>
+<body class="layout-default">
+<section class="hero is-fullheight is-warning">
+<div class="hero-body">
+<div class="container has-text-centered">
+  <h3 class="title is-2">どの<strong>デバイス</strong>を体験してみますか？</h3>
+  <h4 class="subtitle is-4">　</h4>
+  <div id="grid" class="columns">
+    <div id="button1" class="column">
+      <div id="notify1" class="notification is-warning has-text-centered">
+        <p class="subtitle">　</p>
+        <p id="text1" class="title is-2">Hue</p>
+        <p class="subtitle">　</p>
+      </div>
+    </div>
+    <div id="button2" class="column">
+      <div id="notify2" class="notification is-warning has-text-centered">
+        <p class="subtitle">　</p>
+        <p id="text2" class="title is-2">2</p>
+        <p class="subtitle">　</p>
+      </div>
+    </div>
+    <div id="button3" class="column">
+      <div id="notify3" class="notification is-warning has-text-centered">
+        <p class="subtitle">　</p>
+        <p id="text3" class="title is-2">3</p>
+        <p class="subtitle">　</p> 
+      </div>
+    </div>
+  </div>
+  <div id="grid" class="columns">
+    <div id="button1" class="column">
+      <div id="notify1" class="notification is-warning has-text-centered">
+        <p class="subtitle">　</p>
+        <p id="text1" class="title is-2">1</p>
+        <p class="subtitle">　</p>
+      </div>
+    </div>
+    <div id="button2" class="column">
+      <div id="notify2" class="notification is-warning has-text-centered">
+        <p class="subtitle">　</p>
+        <p id="text2" class="title is-2">2</p>
+        <p class="subtitle">　</p>
+      </div>
+    </div>
+    <div id="button3" class="column">
+      <div id="notify3" class="notification is-warning has-text-centered">
+        <p class="subtitle">　</p>
+        <p id="text3" class="title is-2">3</p>
+        <p class="subtitle">　</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+</body>
+</html>
