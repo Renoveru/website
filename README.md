@@ -1,2 +1,11 @@
 # website
-Connectly Lab.'s website
+Connectly's website
+
+# 目的
+- Connectly Appや、スマートデバイスのある生活の価値を伝えるサイト
+- 概要を知りたいという方にURLだけポンと渡すだけで役目を果たすのが理想
+
+# 含むべきコンテンツ
+- どんな体験ができるか説明した動画(製作中)
+- アプリの概要とストアへのリンク
+- Connectly Lab.の説明と予約ページ(予約機能は廃止するかも)
